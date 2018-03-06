@@ -2,9 +2,14 @@ package com.springboot.demo.restapi.topic;
 
 import org.springframework.stereotype.Component;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 @Component
+@Entity
 public class Topic {
 
+    @Id
     String id;
     String name;
     String description;
